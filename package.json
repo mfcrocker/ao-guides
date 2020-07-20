@@ -4,7 +4,7 @@
   "description": "A website for hosting Anarchy Online guides",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
-    "request": "^2.88.2"
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1"
   }
 }

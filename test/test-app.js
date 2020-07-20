@@ -1,9 +1,20 @@
-const expect  = require('chai').expect;
-const request = require('request');
+let chai = require('chai');
+let chaiHttp = require('chai-http');
+let should = chai.should();
 
-it('Main page content', function(done) {
-    request('http://localhost:8080' , function(error, response, body) {
-        expect(body).to.equal('Hello World');
-        done();
+let app = require('../app');
+
+chai.use(chaiHttp);
+
+describe('GET /', () => {
+    it('it should return Hello World!', (done) => {
+        chai.request(app)
+            .get('/')
+            .end((err, res) => {
+                should.not.exist(err);
+                res.should.have.status(200);
+                res.text.should.equal("Hello World!");
+                done();
+            });
     });
 });
