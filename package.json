@@ -2,9 +2,9 @@
   "name": "ao-guides",
   "version": "1.0.0",
   "description": "A website for hosting guides for Anarchy Online",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "mocha lib/**/**.spec.js"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/mfcrocker/ao-guides/issues"
   },
-  "homepage": "https://github.com/mfcrocker/ao-guides#readme"
+  "homepage": "https://github.com/mfcrocker/ao-guides#readme",
+  "dependencies": {
+    "nyc": "^15.1.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "request": "^2.88.2"
+  }
 }
