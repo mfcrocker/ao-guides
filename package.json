@@ -1,0 +1,19 @@
+{
+  "name": "ao-guides",
+  "version": "1.0.0",
+  "description": "A website for hosting guides for Anarchy Online",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha lib/**/**.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfcrocker/ao-guides.git"
+  },
+  "author": "Matt Crocker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfcrocker/ao-guides/issues"
+  },
+  "homepage": "https://github.com/mfcrocker/ao-guides#readme"
+}
