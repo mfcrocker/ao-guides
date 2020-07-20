@@ -1,7 +1,7 @@
 {
   "name": "ao-guides",
   "version": "1.0.0",
-  "description": "A website for hosting guides for Anarchy Online",
+  "description": "A website for hosting Anarchy Online guides",
   "main": "app.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/mfcrocker/ao-guides#readme",
   "dependencies": {
-    "nyc": "^15.1.0",
-    "supertest": "^4.0.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
     "request": "^2.88.2"
   }
 }
